@@ -1,0 +1,291 @@
+*{
+    margin : 0;
+    padding : 0;
+
+}
+.home{
+    width: auto;
+    padding: 40px;
+    background: linear-gradient(to top,rgba(0,0,0,0.5),rgba(0,0,0,0.5)
+    ,transparent ) ;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    height: 87.3vh;
+    position: relative;
+    background-repeat: no-repeat; 
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+    animation-direction: alternate-reverse;
+    animation: change 70s infinite ease-in-out;
+} 
+a{
+    text-decoration: none;
+    color:blue
+}
+/* changing of the background image */
+@keyframes change{
+    0%{
+        background-image: url(images/red.jpg);
+    }
+    20%{
+        background-image: url(images/green.jpg);
+    }
+    40%{
+        background-image: url(images/orange.jpg);
+    }
+    60%{
+        background-image: url(images/brown.jpg);
+    }
+    80%{
+        background-image: url(images/grey.jpg);
+    }
+    100%{
+        background-image: url(images/blue.jpg);
+    }
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo img{
+    width: 130px;
+    float: left;
+    cursor: pointer;
+    height: 70px;
+    border-radius: 50%;
+   
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 20px;
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 100px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 18px;
+    border-bottom: red solid 1px;
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(245, 8, 8);
+    font-family: arial;
+    font-weight: bold;
+    position: relative;
+    
+}
+ul li a:hover{
+    color: lime; 
+
+}  
+
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+
+}
+.srch{
+    font-family: 'Times New Roman', Times, serif;
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid red;
+    margin-top: 13px;
+    color: rgb(214, 197, 194);
+    border-radius: 2px;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 15px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.btn{
+    width: 100px;
+    border: solid 2px red;
+    background: rgb(102, 101, 37);
+    margin-top: 13px;
+    color: rgb(187, 140, 132);
+    height: 40px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 15px;
+
+
+
+}
+.btn{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+.btw:focus{
+    outline: none;
+}.srch:focus{
+    outline: none;
+}
+
+
+.text-box{
+    color: blue;
+    position: absolute;
+    bottom: '';
+    margin-top: 80px;
+}
+
+.text-box p{
+    font-size: 60px;
+    font-weight: 400;
+}
+.text-box h1{
+    font-size: 100px;
+    line-height: 90px;
+    margin-left: -4px;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(188, 188, 231); 
+    background: url(images/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+.text-box h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.text-box .cn{ 
+    width: 150px;
+    height: 40px;
+    background: violet;
+    border: none;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.4 ease;
+    
+}
+.social-icons{
+    position: absolute;
+    right: 6%;
+    bottom: 8%;
+    z-index: 1;
+    
+}
+.social-icons img{
+    width: 40px;
+    height: 40px ;
+    cursor: pointer;
+    display: block;
+    margin: 25px 5px;
+    background: transparent;
+    border-radius: 50%;
+    color: #fff;
+    float: left;  
+}
+h2{
+    font-size: 28px;
+    font-weight: 200;
+
+}
+     /* login form */
+.form{
+    width: 250px;
+    height: 300px;
+    background: linear-gradient(to top,rgb(119,100,63) 50%,rgb(119,100,63) 50%);
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 160px;
+    
+    
+    
+}
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: orange;
+    font-size: 22px;
+
+}
+.form input{
+    width:240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: orange solid 1px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    /* color-adjust: white; */
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    /* font-family: sans-serif; */
+    text-align:center;
+    
+}
+.form input :focus{
+    outline: none;
+}
+::placeholder{
+    color: white;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+.form .link a{
+    text-decoration: none;
+    color: orange;
+}
+.log{
+    width: 150px;
+    height: 40px;
+    background: violet;
+    border: none;
+    margin-top: 30px;
+    margin-left: 40px;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.4 ease;
+}
+.log a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+}.log:hover{
+    background: yellowgreen;
+}
